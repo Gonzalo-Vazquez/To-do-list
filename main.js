@@ -12,6 +12,7 @@ $(document).ready(function(){
 		var  task,
 			 taskDiv1,taskDiv2,
 			 taskName,
+			 taskCompleted,
 			 description_btn,
 			 complete_btn,
 			 delete_btn,
@@ -32,13 +33,14 @@ $(document).ready(function(){
 	
 	 		taskDiv1=$('<div></div>').attr('class','taskDiv1');
 			task.append(taskDiv1);
+				taskCompleted=$('<p></p>').attr('class','taskp').text('Completed');
+				taskDiv1.append(taskCompleted);
+				taskCompleted.hide();
 				taskName=$('<p></p>').attr('class','taskp').text(nameText);
 					taskDiv1.append(taskName);
 					description_btn=$('<input type="submit" value="description">').attr('class','btnDescription');
 					taskDiv1.append(description_btn);
-				// taskDescription=$('<div></div>').attr('class','textDescription').text(descriptionText);
-				// taskDiv1.append(taskDescription);
-				// taskDescription.hide();
+					
 				
 
 			taskDiv2=$('<div></div>').attr('class','taskDiv2');
@@ -57,13 +59,10 @@ $(document).ready(function(){
 
 		//--completed button
 		$(complete_btn).on('click',function(){
-			taskDiv1.children().hide();
-			taskName.remove();
 			complete_btn.remove();
 			modify_btn.remove();
-			nameText='¡COMPLETED!';
-			taskName=$('<p></p>').attr('class','taskp').text(nameText);
-			task.prepend(taskName);
+			taskCompleted.show();
+			taskName.text(nameText);
 			task.toggleClass('completeBox');
 
 			$(delete_btn).on('click',function(){
@@ -87,9 +86,9 @@ $(document).ready(function(){
 			taskName.hide();
 			description_btn.hide();
 			taskDiv2.children().hide();
-			nameTextModification=$('<input type="text" id="textModify" placeholder="Name..." >').attr('class','modificatedText');
+			nameTextModification=$('<input type="text" id="textModify" placeholder="Name..." >').attr('class','modificatedText').attr('value',nameText);
 			taskDiv1.prepend(nameTextModification);
-			descriptionTextModification=$('<textarea  id="textDescriptionModify" placeholder="Description..."></textarea>').attr('class','modificatedTextDescription');
+			descriptionTextModification=$('<textarea  id="textDescriptionModify" placeholder="Description..."></textarea>').attr('class','modificatedTextDescription').text(descriptionText);
 			taskDiv1.append(descriptionTextModification);
 			confirmModification_btn.show();	
 		});
