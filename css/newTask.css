@@ -1,0 +1,159 @@
+.newTask{
+	/*background:blue;*/
+	width: 80%;
+	height: auto;
+	border: 4px solid var(--main-color);
+	margin:10px auto;
+	
+	
+	border-radius: 15px;
+	display: flex;
+	/*flex-direction: row;*/
+	justify-content: space-between;
+}
+
+/*div1 elements*/
+	.taskDiv1{
+		
+		box-sizing: border-box;
+		padding: 15px;		
+	}
+
+	.taskp{
+		margin-left: 20px;
+		font-size: 25px;
+	}
+
+	.btnDescription{
+		background: none;
+		color:gray;
+		border:none;
+		margin-left: 15px;
+		margin-bottom: 10px;
+	}
+
+	.btnDescription:hover{
+		color:#fff;
+	}
+
+	.textDescription{
+		background:#1c2630;
+		border-radius: 6px; 
+		color:#fff;
+		padding: 10px;
+		width: 90%;
+		min-height: 100px;
+		margin-bottom: 10px;
+	}
+
+	.btnExitDescription{
+		background: none;
+		color:gray;
+		border:none;
+		margin-bottom: 2px;
+	}
+	.btnExitDescription:hover{
+		color:#fff;
+	}
+
+/*div2 elements*/
+	.taskDiv2{
+		
+		display: flex;
+		align-items: flex-end;
+	}
+
+	.completeBox{
+		width: 70%;
+		height: auto;
+		background: var(--complete-color);
+		border: 4px solid var(--complete-color);
+		margin:10px auto;
+		padding: 10px 3px 5px 15px;
+		
+		border-radius: 15px;
+		display: flex;
+		justify-content: space-between;
+
+	}
+
+	.deleteBox{
+		width: 70%;
+		height: auto;
+		border: 4px solid var(--delete-color);
+		margin:10px auto;
+		padding: 10px 3px 5px 15px;
+		border-radius: 15px;
+		display: flex;
+		justify-content: space-between;
+	}
+	.button_complete{
+	width:100px;
+	height: 50px;
+	margin-bottom: 0px;
+	border:none;
+	border-radius: 3px;
+	padding: 7px;
+	color:#fff;
+	cursor:pointer;
+	background: var(--complete-color);
+	}
+	.button_delete{
+		width:100px;
+		height: 50px;
+		margin-bottom: 0px;
+		border:none;
+		border-radius: 3px;
+		padding: 7px;
+		color:#fff;
+		cursor:pointer;
+		background: var(--delete-color);
+	}
+
+	.button_modify{width:100px;
+		height: 50px;
+		margin-bottom: 0px;
+		border:none;
+		border-radius: 3px;
+		padding: 7px;
+		color:#fff;
+		cursor:pointer;
+		background: var(--modify-color);
+	}
+
+	.taskDiv2 input[type="submit"]:hover{
+	opacity: .5;
+	}
+
+	.modificatedText{
+		display: block;
+		background: none;
+		border:1px solid var(--main-color);
+		color: #fff;
+		opacity: .8;
+		font-size: 18px;
+		resize: none;
+		width: 98%;
+		height: 50px;
+		border-radius: 6px;
+		margin-bottom: 15px;
+		
+	}
+
+	.modificatedTextDescription{
+		display: block;
+		background: none;
+		border:2px solid var(--main-color);
+		color: #fff;
+		opacity: .8;
+		font-size: 18px;
+		border-radius: 6px;
+		margin-bottom: 5px;
+		resize:none;
+		width: 98%;
+		/*min-width: 200%;*/
+		/*max-width: 400px;*/
+		height: 100px;
+		min-height: 100px;
+		/*margin: 15px 0 15px 15px; */
+	}

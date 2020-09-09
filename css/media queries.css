@@ -1,0 +1,34 @@
+
+@media  screen and (min-width: 928px) {
+	.taskDiv1{
+		width:60%;
+	}
+	.taskDiv2{
+		width:40%;
+		justify-content: center;
+	}
+	
+}
+
+
+
+@media screen and (max-width: 927px){
+	
+	.newTask{
+		flex-direction: column;
+
+		
+	}
+
+
+	.taskDiv1{
+		width: 100%;
+		/*background:blue;*/
+	}
+
+	.taskDiv2{
+		width: 100%;
+		justify-content: center;
+	}
+}
+

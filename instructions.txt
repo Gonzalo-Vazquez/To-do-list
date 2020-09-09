@@ -1,0 +1,29 @@
+To-do list instruccional 
+-add task to list:
+	1°enter the name of the task in the name field.
+	2°enter the description of the task in the description field.
+	3°click the add item button.
+
+--view description:
+	1°click the description button 
+
+
+-complete task:
+	1°click the complete button of the task to be completed
+	2°click the delete button for the completed task
+
+--delete task:
+	1°click the delete button for the desired task
+	2° confirm action
+
+--modify task:
+	1°click the modify button for the desired task
+	2°enter the name of the task in the name field.
+	3°enter the description of the task in the description field.
+	4°confirm action 
+
+--delete all:
+	1°click the clear button 
+
+
+

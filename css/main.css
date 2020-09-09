@@ -1,0 +1,61 @@
+:root{
+	--main-color:#2f6690;
+	--modify-color:#264653;
+	--complete-color:#2a9d8f;
+	--delete-color:#e76f51;
+
+}
+
+
+
+body{
+	background: #1c2630;
+	font-family: Arial;
+}
+
+
+
+@media  screen and (min-width: 928px) {
+	.taskDiv1{
+		width:60%;
+	}
+	.taskDiv2{
+		width:40%;
+		justify-content: center;
+	}
+	
+}
+
+
+
+@media screen and (max-width: 927px){
+	
+	.newTask{
+		flex-direction: column;
+
+		
+	}
+
+	.taskDiv1{
+		width: 100%;
+		/*background:blue;*/
+	}
+
+	.taskDiv2{
+		width: 100%;
+		justify-content: center;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

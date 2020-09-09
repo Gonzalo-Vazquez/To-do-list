@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/media queries.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/container.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/taskData.css">
+	<link rel="stylesheet" href="css/clear.css">
+	<link rel="stylesheet" href="css/newTask.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+
+	<title>To-Do List</title>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div>
+				<h1>To Do List</h1>
+			</div>
+		</header>
+		<section>
+			<div class="taskData">
+				<div >
+					<input type="text" placeholder="Name..." id="name" class="name">
+				</div>
+				<div>
+					<textarea class="description" placeholder="Description..."
+					id="description"></textarea>
+				</div>
+				<div>
+					<input type="submit" value="Add Item" name="addItem" id="addItem">
+				</div>
+			</div>
+		</section>
+		<section class="taskList" id="taskList">		</section>
+		<div class="clear">
+			<input type="submit" id="clear" class="clear_btn" value="Clear">
+		</div>
+	</div>
+	
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
